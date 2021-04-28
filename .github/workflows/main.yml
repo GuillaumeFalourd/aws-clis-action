@@ -8,13 +8,39 @@ on:
   workflow_dispatch:
 
 jobs:
-  action_job:
+  
+  job-aws-cli-v1:
     runs-on: ubuntu-latest
     steps:
       - name: Run AWS CLI v1.19.59 commands
         uses: GuillaumeFalourd/aws-cli-action@main
         env:
           AWS_CLI_VERSION: "1.19.59" # If not informed, the latest AWS CLI version will be used.
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "eu-west-1"
+        with:
+          args: s3 ls
+    
+  job-aws-cli-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run AWS CLI v2.2.0 commands
+        uses: GuillaumeFalourd/aws-cli-action@main
+        env:
+          AWS_CLI_VERSION: "2.2.0" # If not informed, the latest AWS CLI version will be used.
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "eu-west-1"
+        with:
+          args: s3 ls
+    
+  job-aws-cli-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run AWS CLI latest version commands
+        uses: GuillaumeFalourd/aws-cli-action@main
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: "eu-west-1"
