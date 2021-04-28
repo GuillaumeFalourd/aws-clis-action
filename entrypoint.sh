@@ -29,7 +29,7 @@ then
     sudo ./aws/install
     sudo aws --version
 else
-    echo "AWS_CLI_VERSION environment variable isn't set or wasn't recognized"
+    echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
     pip3 --no-cache-dir install --upgrade awscli
 fi
