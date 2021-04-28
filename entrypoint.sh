@@ -20,6 +20,7 @@ then
     aws_access_key_id=$AWS_ACCESS_KEY_ID
     aws_secret_access_key=$AWS_SECRET_ACCESS_KEY
     region=$AWS_DEFAULT_REGION
+fi
 
 echo "Executing command: aws $1"
 
