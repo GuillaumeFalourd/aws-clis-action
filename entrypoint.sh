@@ -2,7 +2,7 @@
 
 set -e
 
-if [[ -z $AWS_CLI_VERSION ]]; 
+if [[ -z $AWS_CLI_VERSION ]]
 then
     echo "AWS_CLI_VERSION environment variable isn't set."
     echo "Installing AWS CLI latest version"
@@ -14,4 +14,4 @@ fi
 
 echo "Executing command: aws $1"
 
-sh -c "sudo aws $1"
+sh -c sudo "aws $1"
