@@ -1,10 +1,18 @@
-name: 'AWS CLI v2.2'
+name: 'AWS CLI action'
 
 description: 'Github Action to execute AWS CLI commands'
 
+inputs:
+    args:
+        description: 'AWS arguments'
+        required: true
+        default: 's3 ls'
+
 runs:
-  using: docker
-  image: docker://amazon/aws-cli:2.2.0
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.args }}
 
 branding:
   icon: 'terminal'
