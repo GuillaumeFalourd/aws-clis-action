@@ -1,6 +1,6 @@
 # AWS CLI action
 
-Github Action to use any version of AWS CLI to run any AWS CLI commands on your workflows.
+Github Action to use `any` version of AWS CLI to run `any` AWS CLI commands on your workflows.
 
 ## How to use this action?
 
@@ -36,3 +36,7 @@ It's also possible to pass the AWS credentials from GitHub secrets using the imp
   with:
     args: s3 ls
 ```
+
+## Licensed
+
+This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/aws-cliaction/blob/main/LICENSE)
