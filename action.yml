@@ -1,0 +1,11 @@
+name: 'AWS CLI v2.2'
+
+description: 'Github Action to execute AWS CLI commands'
+
+runs:
+  using: docker
+  image: docker://amazon/aws-cli:2.2.0
+
+branding:
+  icon: 'terminal'
+  color: 'orange'
