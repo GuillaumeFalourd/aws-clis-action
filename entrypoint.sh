@@ -14,4 +14,4 @@ fi
 
 echo "Executing command: aws $1"
 
-sh -c sudo "aws $1"
+sudo sh -c "aws $1"
