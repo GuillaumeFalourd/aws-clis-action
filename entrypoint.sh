@@ -38,7 +38,7 @@ then
     echo "LS -L"
     ls -l /usr/local/bin/aws
     echo "Installed version:"
-    sudo sh -c "aws --version"
+    sudo sh -c "/usr/local/bin/aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
