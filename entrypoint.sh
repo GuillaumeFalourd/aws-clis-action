@@ -39,10 +39,14 @@ then
     pwd
     echo "--> LS -L /usr/local/bin/aws"
     ls -l /usr/local/bin/aws
+    echo "--> LS -L /usr/local"
+    ls -l /usr/local
     echo "--> LS -L aws"
     ls -l aws
-    echo "--> LS -L aws/dist"
-    ls -l aws/dist
+    echo "--> LS -L aws/dist/aws"
+    ls -l aws/dist/aws
+    echo "--> LS -L aws/dist/awscli"
+    ls -l aws/dist/awscli
     echo "Installed version:"
     sh -c "aws --version"
 else
