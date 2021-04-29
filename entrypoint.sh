@@ -26,8 +26,11 @@ then
 elif [[ ${AWS_CLI_VERSION:0:2} == "2." ]]
 then
     echo "Installing AWS CLI version AWS_CLI_VERSION"
-    pip install aws-shell
-    aws-shell --version
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWS_CLI_VERSION.zip" -o "awscliv2.zip"
+    unzip awscliv2.zip
+    sudo ./aws/install
+    which aws
+    aws --version
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
