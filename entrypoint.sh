@@ -37,6 +37,8 @@ else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
     pip3 --no-cache-dir install --upgrade awscli
+    echo "LS -LHA"
+    ls -lha
     echo "Installed version:"
     sh -c "aws --version"
 fi
