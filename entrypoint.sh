@@ -17,11 +17,13 @@ then
     echo "AWS_CLI_VERSION environment variable isn't set."
     echo "Installing AWS CLI latest version"
     pip3 --no-cache-dir install --upgrade awscli
+    echo "Installed version:"
     sh -c "aws --version"
 elif [[ ${AWS_CLI_VERSION:0:2} == "1." ]]
 then
     echo "Installing AWS CLI version AWS_CLI_VERSION"
     pip3 --no-cache-dir install awscli==$AWS_CLI_VERSION
+    echo "Installed version:"
     sh -c "aws --version"
 elif [[ ${AWS_CLI_VERSION:0:2} == "2." ]]
 then
@@ -29,11 +31,13 @@ then
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWS_CLI_VERSION.zip" -o "awscliv2.zip"
     unzip awscliv2.zip
     sudo ./aws/install
-    sh -c "aws --version"
+    echo "Installed version:"
+    sudo sh -c "aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
     pip3 --no-cache-dir install --upgrade awscli
+    echo "Installed version:"
     sh -c "aws --version"
 fi
 
