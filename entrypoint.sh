@@ -41,12 +41,10 @@ then
     ls -l /usr/local/bin/aws
     echo "--> LS -L /usr/local"
     ls -l /usr/local
-    echo "--> LS -L aws"
-    ls -l aws
-    echo "--> LS -L aws/dist/aws"
-    ls -l aws/dist/aws
-    echo "--> LS -L aws/dist/awscli"
-    ls -l aws/dist/awscli
+    echo "--> LS -L /usr/local/bin"
+    ls -l /usr/local/bin
+    echo "--> LS -L /usr/local/aws-cli"
+    ls -l /usr/local/aws-cli
     echo "Installed version:"
     sh -c "aws --version"
 else
