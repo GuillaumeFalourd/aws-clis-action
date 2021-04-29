@@ -35,7 +35,9 @@ then
     which aws
     echo "LS -LHA"
     ls -lha
-    echo "LS -L"
+    echo "PWD"
+    pwd
+    echo "LS -L /usr/local/bin/aws"
     ls -l /usr/local/bin/aws
     echo "Installed version:"
     sudo sh -c "aws --version"
