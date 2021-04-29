@@ -31,6 +31,8 @@ then
     sudo ./aws/install
     echo "WHICH AWS"
     which aws
+    echo "LS"
+    ls -lha
     echo "CD"
     cd /usr/local/bin/aws
     echo "LS"
