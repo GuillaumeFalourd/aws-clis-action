@@ -41,6 +41,8 @@ then
     ls -l /usr/local/bin/aws
     echo "--> LS -L aws"
     ls -l aws
+    echo "--> LS -L aws/dist"
+    ls -l aws/dist
     echo "Installed version:"
     sh -c "aws --version"
 else
