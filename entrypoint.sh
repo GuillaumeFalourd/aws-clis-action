@@ -45,6 +45,8 @@ then
     ls -l /usr/local/bin
     echo "--> LS -L /usr/local/aws-cli"
     ls -l /usr/local/aws-cli
+    echo "aws-cli v2 bin"
+    cd /usr/local/aws-cli/v2/current/bin/
     echo "Installed version:"
     sh -c "aws --version"
 else
