@@ -1,5 +1,7 @@
 # AWS CLI action
 
+[![AWS CLI V1.X.Y action](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v1.X.Y.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v1.X.Y.yml) [![AWS CLI V2.X.Y action](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v2.X.Y.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v2.X.Y.yml) [![AWS CLI Latest Version action](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-latest-version.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-latest-version.yml)
+
 Github Action to use `any` version of AWS CLI to run `any` AWS CLI commands on your workflows.
 
 ## How to use this action?
