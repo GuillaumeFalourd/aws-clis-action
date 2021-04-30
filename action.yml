@@ -15,5 +15,5 @@ runs:
         - ${{ inputs.args }}
 
 branding:
-  icon: 'terminal'
-  color: 'orange'
+    icon: 'terminal'
+    color: 'orange'
