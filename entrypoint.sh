@@ -33,8 +33,12 @@ then
     sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
     echo "WHICH AWS"
     which aws
+    echo "CD usr/local/bin"
+    cd usr/local/bin
+    echo "LS -L"
+    ls -l
     echo "AWS version installed:"
-    /usr/local/bin/aws --version
+    aws --version
 #    sh -c "/usr/local/bin/aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
