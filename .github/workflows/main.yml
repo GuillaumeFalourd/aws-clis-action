@@ -25,6 +25,7 @@ jobs:
   job-aws-cli-v2:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Run AWS CLI v2.2.0 commands
         uses: GuillaumeFalourd/aws-cli-action@main
         env:
