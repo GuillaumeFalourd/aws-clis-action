@@ -22,7 +22,7 @@ aws s3 ls
 
 ```bash
 - name: Run AWS CLI v2.2.0 commands
-  uses: GuillaumeFalourd/aws-cli-action@v1
+  uses: GuillaumeFalourd/aws-clis-action@v1
   env:
     AWS_CLI_VERSION = "2.2.0" # If not informed, the latest AWS CLI version 2 will be used.
   with:
@@ -35,7 +35,7 @@ It's also possible to pass the AWS credentials from GitHub secrets using the imp
 
 ```bash
 - name: Run AWS CLI v1.19.59 commands
-  uses: GuillaumeFalourd/aws-cli-action@v1
+  uses: GuillaumeFalourd/aws-clis-action@v1
   env:
       AWS_CLI_VERSION: "1.19.59" # If not informed, the latest AWS CLI version 2 will be used.
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
