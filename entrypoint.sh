@@ -7,12 +7,14 @@ install_aws_version_one() {
 }
 
 install_aws_version_two() {
+    
     if [[ ! -z $AWS_CLI_VERSION && ${AWS_CLI_VERSION:0:2} == "2." ]]
     then
         curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$1.zip -o awscliv2.zip
     else
         curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip
     fi
+
     unzip awscliv2.zip \
     && aws/install \
     && rm -rf \
