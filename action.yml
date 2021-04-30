@@ -1,6 +1,6 @@
-name: 'AWS CLI action'
+name: 'AWS CLIs (V1 & V2) Action'
 
-description: 'Github Action to execute AWS CLI commands'
+description: 'Github Action to use any version (1.x.y or 2.x.y) of AWS CLI to run any AWS CLI commands on your workflows 🤖'
 
 inputs:
     args:
