@@ -1,0 +1,23 @@
+
+name: AWS CLI V1 action
+
+on:
+  push:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  
+  job-aws-cli-v1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run AWS CLI v1.19.59 commands
+        uses: GuillaumeFalourd/aws-cli-action@main
+        env:
+          AWS_CLI_VERSION: "1.19.59" # If not informed, the latest AWS CLI version 2 will be used.
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: "eu-west-1"
+        with:
+          args: s3 ls
