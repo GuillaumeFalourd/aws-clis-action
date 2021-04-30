@@ -1,5 +1,5 @@
 
-name: AWS CLI V2.X.Y action
+name: AWS CLI V2.X.Y Workflow
 
 on:
   push:

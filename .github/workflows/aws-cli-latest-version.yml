@@ -1,5 +1,5 @@
 
-name: AWS CLI Latest Version action
+name: AWS CLI Latest Version Workflow
 
 on:
   push:
