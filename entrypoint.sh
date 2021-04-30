@@ -31,6 +31,8 @@ then
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWS_CLI_VERSION.zip" -o "awscliv2.zip"
     unzip awscliv2.zip
     sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+    echo "WHICH AWS"
+    which aws
     echo "AWS version installed:"
     sh -c "aws --version"
 else
