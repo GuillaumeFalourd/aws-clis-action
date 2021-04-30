@@ -12,6 +12,8 @@ set -e
 #    pip3 --no-cache-dir install awscli==$AWS_CLI_VERSION
 #fi
 
+echo "AWS_CLI_VERSION variable set in workflow: $AWS_CLI_VERSION"
+
 if [[ -z $AWS_CLI_VERSION ]]
 then
     echo "AWS_CLI_VERSION environment variable isn't set."
