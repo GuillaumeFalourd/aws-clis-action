@@ -1,7 +1,9 @@
 # AWS CLIs Action
 
 [![AWS CLI V1.X.Y workflow](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v1.X.Y.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v1.X.Y.yml)
+
 [![AWS CLI V2.X.Y workflow](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v2.X.Y.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-v2.X.Y.yml)
+
 [![AWS CLI Latest Version workflow](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-latest-version.yml/badge.svg)](https://github.com/GuillaumeFalourd/aws-cli-action/actions/workflows/aws-cli-latest-version.yml)
 
 ![AWS CLIs Action](https://user-images.githubusercontent.com/22433243/116742843-589d6800-a9ce-11eb-8cff-675a0d7cabde.png)
