@@ -34,7 +34,7 @@ then
     echo "WHICH AWS"
     which aws
     echo "CD usr/local/bin"
-    cd usr/local/bin
+    cd /usr/local/bin
     echo "LS -L"
     ls -l
     echo "AWS version installed:"
