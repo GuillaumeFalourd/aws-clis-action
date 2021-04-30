@@ -31,15 +31,9 @@ then
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWS_CLI_VERSION.zip" -o "awscliv2.zip"
     unzip awscliv2.zip
     sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
-    echo "WHICH AWS"
-    which aws
-    echo "CD usr/local/bin"
-    cd /usr/local/bin
-    echo "LS -L"
-    ls -l
     echo "AWS version installed:"
     aws --version
-#    sh -c "/usr/local/bin/aws --version"
+#    sh -c "aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
