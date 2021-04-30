@@ -38,8 +38,7 @@ then
     /usr/local/aws-cli/v2/*/dist/awscli/data/ac.index \
     /usr/local/aws-cli/v2/*/dist/awscli/examples \
     echo "AWS version installed:"
-    aws --version
-#    sh -c "aws --version"
+    sh -c "aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
