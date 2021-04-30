@@ -28,9 +28,15 @@ then
 elif [[ ${AWS_CLI_VERSION:0:2} == "2." ]]
 then
     echo "Installing AWS CLI version AWS_CLI_VERSION"
-    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-$AWS_CLI_VERSION.zip" -o "awscliv2.zip"
-    unzip awscliv2.zip
-    sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+    curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
+    && unzip awscliv2.zip \
+    && aws/install \
+    && rm -rf \
+    awscliv2.zip \
+    aws \
+    /usr/local/aws-cli/v2/*/dist/aws_completer \
+    /usr/local/aws-cli/v2/*/dist/awscli/data/ac.index \
+    /usr/local/aws-cli/v2/*/dist/awscli/examples \
     echo "AWS version installed:"
     aws --version
 #    sh -c "aws --version"
