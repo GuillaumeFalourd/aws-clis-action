@@ -34,7 +34,8 @@ then
     echo "WHICH AWS"
     which aws
     echo "AWS version installed:"
-    sh -c "/usr/local/bin/aws --version"
+    /usr/local/bin/aws --version
+#    sh -c "/usr/local/bin/aws --version"
 else
     echo "AWS_CLI_VERSION environment variable wasn't recognized"
     echo "Installing AWS CLI latest version"
