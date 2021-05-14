@@ -14,6 +14,10 @@ Github Action to use `any` version (**1.x.y** or **2.x.y**) of AWS CLI to run `a
 
 ## How to use this action?
 
+Field | Mandatory | Observation
+------------ | ------------  | -------------
+**args** | YES | Ex: `s3 ls`
+
 Demonstration of how to execute the following command inside your workflow:
 
 ```bash
