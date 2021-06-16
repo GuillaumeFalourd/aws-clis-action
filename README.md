@@ -61,4 +61,4 @@ It's also possible to pass the AWS credentials from GitHub secrets using the imp
 
 ## Licensed
 
-This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/aws-cliaction/blob/main/LICENSE)
+This repository uses the [Apache License 2.0](https://github.com/GuillaumeFalourd/aws-cli-action/blob/main/LICENSE)
