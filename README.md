@@ -12,7 +12,13 @@
 
 Github Action to use `any` version (**1.x.y** or **2.x.y**) of AWS CLI to run `any` AWS CLI commands on your workflows.
 
-**SUPPORT: LINUX ONLY**
+## SUPPORT
+
+OS | SUPPORTED
+------------ | ------------
+**LINUX** | YES
+**MACOS** | NO
+**WINDOWS** | NO
 
 ## How to use this action?
 
